@@ -7,10 +7,16 @@ require (
 	github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724c6d
 )
 
+require github.com/blueprint-uservices/sosp_tutorial/hotel/workload v0.0.0
+
+replace github.com/blueprint-uservices/sosp_tutorial/hotel/workload => ../workload
+
 require (
-	github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240405152959-f078915d2306 // indirect
+	github.com/blueprint-uservices/blueprint/examples/dsb_hotel/workflow v0.0.0-20241015110303-ca8bcf724c6d // indirect
+	github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
+	github.com/hailocab/go-geoindex v0.0.0-20160127134810-64631bfe9711 // indirect
 	github.com/otiai10/copy v1.14.0 // indirect
 	go.mongodb.org/mongo-driver v1.15.0 // indirect
 	go.opentelemetry.io/otel v1.26.0 // indirect

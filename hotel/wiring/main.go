@@ -15,5 +15,6 @@ func main() {
 		name,
 		specs.Default,
 		specs.Tracing,
+		specs.Metastability,
 	)
 }

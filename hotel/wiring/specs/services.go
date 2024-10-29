@@ -1,6 +1,11 @@
 package specs
 
-import "github.com/blueprint-uservices/blueprint/blueprint/pkg/wiring"
+import (
+	"github.com/blueprint-uservices/blueprint/blueprint/pkg/wiring"
+	"github.com/blueprint-uservices/blueprint/examples/dsb_hotel/workflow/hotelreservation"
+	"github.com/blueprint-uservices/blueprint/plugins/mongodb"
+	"github.com/blueprint-uservices/blueprint/plugins/workflow"
+)
 
 // initServices adds the basic backends such as caches and databases to the wiring spec. The function also adds the user-defined (aka internal) services to the wiring specification.
 // The function returns the array containing the list of names of internal services.
@@ -10,6 +15,7 @@ func initServices(spec wiring.WiringSpec) []string {
 
 	// Step 1: Define backend databases
 	// Step 1a: Define user database
+	user_db := mongodb.Container(spec, "user_db")
 
 	// Step 1b: Define recommendations database
 
@@ -28,6 +34,8 @@ func initServices(spec wiring.WiringSpec) []string {
 
 	// Step 3: Define internal services
 	// Step 3a: Define user service
+	user_service := workflow.Service[hotelreservation.UserService](spec, "user_service", user_db)
+	services = append(services, user_service)
 
 	// Step 3b: Define recommendation service
 

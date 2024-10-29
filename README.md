@@ -12,8 +12,8 @@ The tutorial only requires a functional laptop. No additional resources are requ
 
 + go 1.22+ : [Install](https://go.dev/doc/install)
 + docker : [Install](https://docs.docker.com/engine/install/)
-+ gRPC for Go: [Install](https://grpc.io/docs/languages/go/quickstart/)
-+ Thrift: [Download](https://thrift.apache.org/download), [Dependencies](https://thrift.apache.org/docs/install/debian.html)
++ (Optional) gRPC for Go: [Install](https://grpc.io/docs/languages/go/quickstart/)
++ (Optional) Thrift: [Download](https://thrift.apache.org/download), [Dependencies](https://thrift.apache.org/docs/install/debian.html)
 
 
 ## Detailed Instructions

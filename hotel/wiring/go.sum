@@ -6,6 +6,8 @@ github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724
 github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724c6d/go.mod h1:lrHuvmxLSVgMzYqrOkyIWpv4X/FKg8PsFM6ODK87lUo=
 github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e h1:yRCPuCqLAQDDPB5yE+zPLy6cvX9ysAFQGt/hv5S7e+8=
 github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e/go.mod h1:pWgaE60Wfg1GDkFUz17NcxxaFk66/s2RRO5UZG9lCXA=
+github.com/bradfitz/gomemcache v0.0.0-20230905024940-24af94b03874 h1:N7oVaKyGp8bttX0bfZGmcGkjz7DLQXhAn3DNd3T0ous=
+github.com/bradfitz/gomemcache v0.0.0-20230905024940-24af94b03874/go.mod h1:r5xuitiExdLAJ09PR7vBVENGvp4ZuTBeWTGtxuX3K+c=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=

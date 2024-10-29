@@ -92,7 +92,7 @@ To complete the wiring spec, you need to initialize the various backends (databa
 
 To do so, follow the steps listed in the `initServices` function in the [services.go](./hotel/wiring/specs/services.go) file.
 
-We have initialized the user service to give you an example of how to initialize the services.
+We have initialized the `rate service` and its dependencies to give you an example of how to initialize the services.
 
 > Hint: Use the [leaf service initialization](./leaf/wiring/specs/docker.go) as a guide for initializing services. You can also use the workflow definitions of the services in the hotel reservation app to find the correct type for each service. The workflow services can be found [here](https://github.com/Blueprint-uServices/blueprint/tree/main/examples/dsb_hotel/workflow/hotelreservation).
 

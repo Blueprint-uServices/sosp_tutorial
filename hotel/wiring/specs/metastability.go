@@ -8,6 +8,7 @@ import (
 	"github.com/blueprint-uservices/blueprint/plugins/goproc"
 	"github.com/blueprint-uservices/blueprint/plugins/http"
 	"github.com/blueprint-uservices/blueprint/plugins/linuxcontainer"
+	"github.com/blueprint-uservices/blueprint/plugins/retries"
 	"github.com/blueprint-uservices/blueprint/plugins/workload"
 	"github.com/blueprint-uservices/sosp_tutorial/hotel/workload/workloadgen"
 )
@@ -31,6 +32,7 @@ func applyMetastabilityScaffolding(spec wiring.WiringSpec, serviceName string) s
 	// Step 1: Apply the retry plugin
 
 	// Step 2: Apply the timeout plugin
+	retries.AddRetriesWithTimeouts(spec, serviceName, 3, "1s")
 
 	procName := fmt.Sprintf("%s_process", serviceName)
 	ctrName := fmt.Sprintf("%s_container", serviceName)

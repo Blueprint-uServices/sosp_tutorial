@@ -8,6 +8,8 @@ import (
 	"github.com/blueprint-uservices/blueprint/plugins/goproc"
 	"github.com/blueprint-uservices/blueprint/plugins/http"
 	"github.com/blueprint-uservices/blueprint/plugins/linuxcontainer"
+	"github.com/blueprint-uservices/blueprint/plugins/workload"
+	"github.com/blueprint-uservices/sosp_tutorial/hotel/workload/workloadgen"
 )
 
 var Metastability = cmdbuilder.SpecOption{
@@ -26,9 +28,9 @@ func applyMetastabilityScaffolding(spec wiring.WiringSpec, serviceName string) s
 
 	// Part 3: TODO ---> Complete the function to apply the retry and timeout plugins
 
-	// Step 1: Apply the timeout plugin
+	// Step 1: Apply the retry plugin
 
-	// Step 2: Apply the retry plugin
+	// Step 2: Apply the timeout plugin
 
 	procName := fmt.Sprintf("%s_process", serviceName)
 	ctrName := fmt.Sprintf("%s_container", serviceName)
@@ -47,7 +49,9 @@ func makeMetastabilitySpec(spec wiring.WiringSpec) ([]string, error) {
 		cntrs = append(cntrs, cntr)
 	}
 
-	// Use a fancy workload generator
+	// Use the complex generator
+	wlgen := workload.Generator[workloadgen.ComplexWorkload](spec, "wlgen", "frontend_service")
+	cntrs = append(cntrs, wlgen)
 
 	return cntrs, nil
 }

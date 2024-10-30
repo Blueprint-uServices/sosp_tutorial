@@ -59,6 +59,8 @@ The built workload generator is at the location `build/wlgen/wlgen_proc/wlgen_pr
 
 ```bash
 # Assuming current working directory is build
+set -a
+. ./.local.env
 ./wlgen/wlgen_proc/wlgen_proc/wlgen_proc
 ```
 

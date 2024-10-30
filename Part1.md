@@ -149,6 +149,16 @@ To launch the built containers, execute the following command:
 docker compose up -d
 ```
 
+To check that the containers are successfully running, execute the following command
+
+```bash
+docker compose ps
+```
+
+You should see the following output
+
+![Output](./outputs/hotel_ps.png)
+
 ### Stopping the application
 
 To stop the launched containers, execute the following command:

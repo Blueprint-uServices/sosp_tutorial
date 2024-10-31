@@ -24,7 +24,7 @@ go run main.go -w tracing -o build
 
 This will generate the implementation in the build folder.
 
-### Compiling the application
+### Building the application
 
 We will use `docker compose` to build the containers and then eventually deploy them.
 
@@ -87,13 +87,14 @@ After clicking on a trace, you should expect to see the following output:
 To stop the launched containers, execute the following command:
 
 ```bash
+cd docker
 docker compose down
 ```
 
 We will also additionally remove the build folder so that we can use that folder in future parts.
 
 ```bash
-cd hotel/wiring
+cd ../../
 rm -rf build
 ```
 

@@ -22,10 +22,10 @@ To reproduce a metastability failure, you would need to select appropriate value
 To compile the `metastability` wiring spec, execute the following steps:
 
 ```bash
-go run main.go -w tracing -o build
+go run main.go -w metastability -o build
 ```
 
-### Compiling the application
+### Building the application
 
 We will use `docker compose` to build the containers and then eventually deploy them.
 
@@ -59,7 +59,7 @@ The `metastability.sh` script expects 2 input arguments. The first argument is t
 Here is a sample execution of the script
 
 ```bash
-cd hotel/wiring
+cd ../../
 ./metastability.sh 1000 3000
 ```
 

@@ -1,9 +1,9 @@
-github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20240405152959-f078915d2306 h1:qN3n6Pr7fGalqno6+sbGH/Wx8HC+izyTft5waFKVDRQ=
-github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20240405152959-f078915d2306/go.mod h1:zV7A7jdUp7+9i/ypOd3IPstNrXtf+KKZbcCYVF6PggU=
+github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20241015110303-ca8bcf724c6d h1:2pLsYbQAQjEcdlLfdHXFZqzi6ieqUnNuxFkmNxKpjpo=
+github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20241015110303-ca8bcf724c6d/go.mod h1:UtwYAD0WuuSf/U18tqZ1eGVp3UzzxLTUhAkXdmRggQ4=
 github.com/blueprint-uservices/blueprint/examples/leaf/workflow v0.0.0-20241015110303-ca8bcf724c6d h1:BDDhabHs28/AcpNjNZ7jKxgv41a3CJMJI5ugdY610CY=
 github.com/blueprint-uservices/blueprint/examples/leaf/workflow v0.0.0-20241015110303-ca8bcf724c6d/go.mod h1:f4rLdgsgKPffRFflio7Snkyoate87JFAvdMrfmX7sCM=
-github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724c6d h1:CXj1kOnU20MQSAc+lpIlCitrNW0teUpSfWu/DxLR/BU=
-github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724c6d/go.mod h1:lrHuvmxLSVgMzYqrOkyIWpv4X/FKg8PsFM6ODK87lUo=
+github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241029180336-5902a9377ed2 h1:asZxZIh+aesbr68Djy3R9vzjzC/IAeLqfBFXvxuT4+c=
+github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241029180336-5902a9377ed2/go.mod h1:lrHuvmxLSVgMzYqrOkyIWpv4X/FKg8PsFM6ODK87lUo=
 github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e h1:yRCPuCqLAQDDPB5yE+zPLy6cvX9ysAFQGt/hv5S7e+8=
 github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e/go.mod h1:pWgaE60Wfg1GDkFUz17NcxxaFk66/s2RRO5UZG9lCXA=
 github.com/bradfitz/gomemcache v0.0.0-20230905024940-24af94b03874 h1:N7oVaKyGp8bttX0bfZGmcGkjz7DLQXhAn3DNd3T0ous=

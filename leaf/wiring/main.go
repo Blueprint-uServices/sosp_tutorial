@@ -14,5 +14,6 @@ func main() {
 	cmdbuilder.MakeAndExecute(
 		name,
 		specs.Docker,
+		specs.Bonus,
 	)
 }

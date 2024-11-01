@@ -1,12 +1,16 @@
 module github.com/blueprint-uservices/sosp_tutorial/leaf/wiring
 
-go 1.22
+go 1.22.1
 
 require (
-	github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20240405152959-f078915d2306
+	github.com/blueprint-uservices/blueprint/blueprint v0.0.0-20241015110303-ca8bcf724c6d
 	github.com/blueprint-uservices/blueprint/examples/leaf/workflow v0.0.0-20241015110303-ca8bcf724c6d
-	github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241015110303-ca8bcf724c6d
+	github.com/blueprint-uservices/blueprint/plugins v0.0.0-20241029180336-5902a9377ed2
 )
+
+require github.com/blueprint-uservices/sosp_tutorial/sosp_plugins v0.0.0
+
+replace github.com/blueprint-uservices/sosp_tutorial/sosp_plugins => ../../sosp_plugins
 
 require (
 	github.com/blueprint-uservices/blueprint/runtime v0.0.0-20240619221802-d064c5861c1e // indirect
